@@ -1,5 +1,7 @@
 # TF2-like character controller for Godot Game Engine
-FPS character controller that tries to imitate the movement style and mechanics of the popular game Team Fortress 2.
+FPS character controller that tries to imitate the movement style and mechanics of the popular game Team Fortress 2. 
+
+Originally made on Godot 3.5
 
 ## Controls
 * WASD: move
