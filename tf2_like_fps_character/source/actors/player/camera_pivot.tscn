@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://source/actors/player/camera_pivot.gd" type="Script" id=1]
+
+[node name="CameraPivot" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+script = ExtResource( 1 )
+fp_camera_path = NodePath("FPCamera")
+tp_camera_path = NodePath("FPCamera/SpringArm/TPCamera")
+
+[node name="FPCamera" type="Camera" parent="."]
+current = true
+
+[node name="SpringArm" type="SpringArm" parent="FPCamera"]
+spring_length = 5.0
+
+[node name="TPCamera" type="Camera" parent="FPCamera/SpringArm"]
