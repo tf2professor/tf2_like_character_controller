@@ -16,7 +16,7 @@ Originally made on Godot 3.5
 	* To air strafe, press A or D and smoothly move the mouse towards the direction you are strafing to;
 	* Moving the mouse too abruptly cancels an air strafe;
 	* Pressing a movement key opposite to the direction you are moving will stop the motion;
-	* If jumping from a stand still, pressing the movement keys will grant you a small bosst in the air, to help with climbing obstacles.
+	* If jumping from a stand still, pressing the movement keys will grant you a small boost in the air, to help with climbing obstacles.
 2. Intelligent crouch system:
 	* If there's an obstacle above, the character remains crouched until the space above is free;
 	* Can't jump while fully crouched;
