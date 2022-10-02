@@ -7,6 +7,12 @@
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.59, 0 )
 
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.707107, 0.707107, 0, -0.707107, -0.707107, 0, 25.5, 0 )
+light_color = Color( 1, 0.960784, 0.866667, 1 )
+light_energy = 0.7
+shadow_enabled = true
+
 [node name="Bridge" type="CSGBox" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 3.5 )
 use_collision = true
@@ -89,6 +95,12 @@ depth = 11.0
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 5.5, 1.5 )
 width = 1.0
 height = 4.0
+depth = 8.0
+
+[node name="CSGBox8" type="CSGBox" parent="FirstFloor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.5, -13.5 )
+width = 1.0
+height = 12.0
 depth = 8.0
 
 [node name="SecondFloor" type="CSGBox" parent="."]
@@ -174,3 +186,21 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 6, -3 )
 width = 6.0
 height = 1.0
 depth = 1.0
+
+[node name="Pit" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.5, 3.5 )
+use_collision = true
+width = 31.0
+height = 1.0
+depth = 7.0
+
+[node name="CSGBox" type="CSGBox" parent="Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 7.5 )
+width = 5.0
+height = 1.0
+depth = 22.0
+
+[node name="CSGPolygon" type="CSGPolygon" parent="Pit"]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 20.5, 0.5, 16 )
+polygon = PoolVector2Array( -2.5, 0, -2.5, 6, 0.5, 6, 12.5, 0 )
+depth = 5.0
