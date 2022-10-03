@@ -13,209 +13,37 @@ light_color = Color( 1, 0.960784, 0.866667, 1 )
 light_energy = 0.7
 shadow_enabled = true
 
-[node name="Bridge" type="CSGBox" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 3.5 )
+[node name="Level" type="CSGCombiner" parent="."]
 use_collision = true
-width = 5.0
-height = 1.0
-depth = 7.0
 
-[node name="OutsideFloor" type="CSGBox" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 13 )
-use_collision = true
-width = 31.0
-height = 6.0
-depth = 12.0
+[node name="Bridge" type="CSGCombiner" parent="Level"]
 
-[node name="Ramp1" type="CSGPolygon" parent="."]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.5, 0, 16.5 )
-use_collision = true
-polygon = PoolVector2Array( -2.5, 0, -2.5, 1, 1, 0 )
-depth = 3.0
-
-[node name="Ramp2" type="CSGPolygon" parent="."]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.5, 0, 16.5 )
-use_collision = true
-polygon = PoolVector2Array( -2.5, 0, -2.5, 1, 1, 0 )
-depth = 3.0
-
-[node name="FirstFloor" type="CSGBox" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 24.5 )
-use_collision = true
-width = 31.0
-height = 7.0
-depth = 11.0
-
-[node name="CSGBox" type="CSGBox" parent="FirstFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -7.5 )
-width = 7.0
-height = 5.0
-depth = 4.0
-
-[node name="CSGBox3" type="CSGBox" parent="FirstFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 5, -7.5 )
-width = 9.0
-height = 5.0
-depth = 4.0
-
-[node name="CSGBox2" type="CSGBox" parent="FirstFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 5, -7.5 )
-width = 9.0
-height = 5.0
-depth = 4.0
-
-[node name="CSGBox4" type="CSGBox" parent="FirstFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, -1.5 )
-width = 1.0
-height = 4.0
-depth = 8.0
-
-[node name="CSGBox5" type="CSGBox" parent="FirstFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, 6.5 )
-width = 31.0
-height = 18.0
-
-[node name="CSGPolygon" type="CSGPolygon" parent="FirstFloor"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 3.5, 4.5 )
-polygon = PoolVector2Array( -1.5, 0, -1.5, 2, 2, 2, 5.5, 0 )
-depth = 3.0
-
-[node name="CSGPolygon2" type="CSGPolygon" parent="FirstFloor/CSGPolygon"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 3 )
-polygon = PoolVector2Array( -1, 0, -1, 5, 3, 2, 3, 0 )
-depth = 3.0
-
-[node name="CSGBox6" type="CSGBox" parent="FirstFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 6, 0 )
-width = 1.0
-height = 5.0
-depth = 11.0
-
-[node name="CSGBox7" type="CSGBox" parent="FirstFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 5.5, 1.5 )
-width = 1.0
-height = 4.0
-depth = 8.0
-
-[node name="CSGBox8" type="CSGBox" parent="FirstFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.5, -13.5 )
-width = 1.0
-height = 12.0
-depth = 8.0
-
-[node name="SecondFloor" type="CSGBox" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5.5, 22.5 )
-use_collision = true
-width = 23.0
-height = 1.0
-depth = 15.0
-
-[node name="CSGBox" type="CSGBox" parent="SecondFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.5, 0, -5.5 )
-width = 8.0
-height = 1.0
-depth = 4.0
-
-[node name="CSGBox2" type="CSGBox" parent="SecondFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3.5, 0 )
-width = 1.0
-height = 6.0
-depth = 15.0
-
-[node name="CSGBox3" type="CSGBox" parent="SecondFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 3.5, 0 )
-width = 1.0
-height = 6.0
-depth = 15.0
-
-[node name="CSGBox4" type="CSGBox" parent="SecondFloor"]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -12.5, 3.5, -7 )
-width = 1.0
-height = 6.0
-depth = 12.0
-
-[node name="CSGBox5" type="CSGBox" parent="SecondFloor"]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 3.5, -3 )
-width = 1.0
-height = 6.0
-depth = 13.0
-
-[node name="CSGBox6" type="CSGBox" parent="SecondFloor"]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.5, 3.5, 1 )
-width = 1.0
-height = 6.0
-depth = 8.0
-
-[node name="CSGBox7" type="CSGBox" parent="SecondFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 4.5 )
-operation = 2
-width = 5.0
-depth = 4.0
-
-[node name="CSGBox8" type="CSGBox" parent="SecondFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 4.5 )
-width = 21.0
-height = 1.0
-depth = 6.0
-
-[node name="CSGBox9" type="CSGBox" parent="SecondFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 6, -0.5 )
-width = 13.0
-height = 1.0
-depth = 4.0
-
-[node name="CSGBox10" type="CSGBox" parent="SecondFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 6, -1 )
-width = 8.0
-height = 1.0
-depth = 3.0
-
-[node name="CSGBox12" type="CSGBox" parent="SecondFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5, 6, -4.5 )
-width = 10.0
-height = 1.0
-depth = 4.0
-
-[node name="CSGBox13" type="CSGBox" parent="SecondFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 6, -5 )
-height = 1.0
-depth = 3.0
-
-[node name="CSGBox11" type="CSGBox" parent="SecondFloor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 6, -3 )
+[node name="CSGBox" type="CSGBox" parent="Level/Bridge"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 4 )
 width = 6.0
+height = 0.5
+depth = 8.0
+
+[node name="CSGBox2" type="CSGBox" parent="Level/Bridge"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75, 2.25, 7.75 )
+width = 0.5
+height = 4.5
+depth = 0.5
+
+[node name="CSGBox3" type="CSGBox" parent="Level/Bridge/CSGBox2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0, 0 )
+width = 0.5
+height = 4.5
+depth = 0.5
+
+[node name="CSGBox" type="CSGBox" parent="Level/Bridge/CSGBox2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -1.75, -4 )
+width = 0.25
 height = 1.0
-depth = 1.0
+depth = 7.5
 
-[node name="Pit" type="CSGBox" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.5, 3.5 )
-use_collision = true
-width = 31.0
+[node name="CSGBox2" type="CSGBox" parent="Level/Bridge/CSGBox2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.625, -1.75, -4 )
+width = 0.25
 height = 1.0
-depth = 7.0
-
-[node name="CSGBox" type="CSGBox" parent="Pit"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 7.5 )
-width = 5.0
-height = 1.0
-depth = 22.0
-
-[node name="CSGPolygon" type="CSGPolygon" parent="Pit"]
-transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 20.5, 0.5, 16 )
-polygon = PoolVector2Array( -2.5, 0, -2.5, 6, 0.5, 6, 12.5, 0 )
-depth = 5.0
-
-[node name="CSGBox" type="CSGBox" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5, 3, 11 )
-height = 18.0
-depth = 22.0
-
-[node name="CSGBox3" type="CSGBox" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, 3, 7.5 )
-height = 18.0
-depth = 15.0
-
-[node name="CSGBox2" type="CSGBox" parent="."]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.5, 3, 23 )
-height = 18.0
-depth = 6.0
+depth = 7.5
