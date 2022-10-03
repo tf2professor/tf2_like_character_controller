@@ -204,3 +204,18 @@ depth = 22.0
 transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 20.5, 0.5, 16 )
 polygon = PoolVector2Array( -2.5, 0, -2.5, 6, 0.5, 6, 12.5, 0 )
 depth = 5.0
+
+[node name="CSGBox" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5, 3, 11 )
+height = 18.0
+depth = 22.0
+
+[node name="CSGBox3" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, 3, 7.5 )
+height = 18.0
+depth = 15.0
+
+[node name="CSGBox2" type="CSGBox" parent="."]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.5, 3, 23 )
+height = 18.0
+depth = 6.0
