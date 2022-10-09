@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://source/actors/player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/models/twin_forts.tscn" type="PackedScene" id=2]
+
+[sub_resource type="GIProbeData" id=1]
+bounds = AABB( -21.9093, -12.5102, -38.3439, 43.8185, 25.0204, 76.6877 )
+cell_size = 0.599123
+to_cell_xform = Transform( 1.66911, 0, 0, 0, 1.66911, 0, 0, 0, 1.66911, 36.5689, 20.8809, 64 )
+dynamic_data = PoolIntArray( 0, 8, 128, 64, 128, 1, 0, 0, 1086324736, 1110966272, 0, 0, 1102053376, 1110966272, 1065353216, 0, -1, -1, -1, -1, -1, -1, -1, -1, 0, 0, 8355711, 0 )
+dynamic_range = 4
+energy = 0.3
+bias = 1.5
+normal_bias = 0.0
+propagation = 0.7
+
+[sub_resource type="ProceduralSky" id=2]
+sun_color = Color( 1, 0.992157, 0.858824, 1 )
+sun_latitude = 68.4
+sun_longitude = -22.27
+sun_energy = 1.5
+
+[sub_resource type="Environment" id=3]
+background_mode = 2
+background_sky = SubResource( 2 )
+ambient_light_sky_contribution = 0.5
 
 [node name="TestLevel" type="Spatial"]
 
@@ -8,6 +31,17 @@
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 1, 0, 0, 0, -0.779305, 0.626645, 0, -0.626645, -0.779305, 0, 8.65707, 0 )
-light_energy = 0.7
+transform = Transform( 0.928745, -0.347379, -0.129465, 0, -0.349226, 0.937039, -0.37072, -0.87027, -0.324342, 0, 20.9551, 0 )
+light_color = Color( 1, 0.984314, 0.858824, 1 )
 shadow_enabled = true
+
+[node name="twin_forts" parent="." instance=ExtResource( 2 )]
+
+[node name="GIProbe" type="GIProbe" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.89906, 0 )
+extents = Vector3( 21.9093, 12.5102, 38.3439 )
+energy = 0.3
+data = SubResource( 1 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 3 )
