@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/grid_green_albedo.png-49fb802c6182e8ccf932b491574181ba.s3tc.stex"
-path.etc="res://.import/grid_green_albedo.png-49fb802c6182e8ccf932b491574181ba.etc.stex"
+path.s3tc="res://.import/wood_red_rough_albedo.png-ab68c705f7eeb66107621cd9ea575a4a.s3tc.stex"
+path.etc="res://.import/wood_red_rough_albedo.png-ab68c705f7eeb66107621cd9ea575a4a.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/materials/grid_green_albedo.png"
-dest_files=[ "res://.import/grid_green_albedo.png-49fb802c6182e8ccf932b491574181ba.s3tc.stex", "res://.import/grid_green_albedo.png-49fb802c6182e8ccf932b491574181ba.etc.stex" ]
+source_file="res://assets/materials/wood_red_rough_albedo.png"
+dest_files=[ "res://.import/wood_red_rough_albedo.png-ab68c705f7eeb66107621cd9ea575a4a.s3tc.stex", "res://.import/wood_red_rough_albedo.png-ab68c705f7eeb66107621cd9ea575a4a.etc.stex" ]
 
 [params]
 

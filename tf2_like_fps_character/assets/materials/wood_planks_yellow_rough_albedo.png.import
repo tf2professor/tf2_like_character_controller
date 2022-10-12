@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/grid_dark_albedo.png-89034412efdfe38d0e9fbf4c4004df32.s3tc.stex"
-path.etc="res://.import/grid_dark_albedo.png-89034412efdfe38d0e9fbf4c4004df32.etc.stex"
+path.s3tc="res://.import/wood_planks_yellow_rough_albedo.png-30e2d53f2f0663c728a22379199ace62.s3tc.stex"
+path.etc="res://.import/wood_planks_yellow_rough_albedo.png-30e2d53f2f0663c728a22379199ace62.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/materials/grid_dark_albedo.png"
-dest_files=[ "res://.import/grid_dark_albedo.png-89034412efdfe38d0e9fbf4c4004df32.s3tc.stex", "res://.import/grid_dark_albedo.png-89034412efdfe38d0e9fbf4c4004df32.etc.stex" ]
+source_file="res://assets/materials/wood_planks_yellow_rough_albedo.png"
+dest_files=[ "res://.import/wood_planks_yellow_rough_albedo.png-30e2d53f2f0663c728a22379199ace62.s3tc.stex", "res://.import/wood_planks_yellow_rough_albedo.png-30e2d53f2f0663c728a22379199ace62.etc.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/hills.glb-64376a842c07b3888b485dd0e73aa011.scn"
+path="res://.import/twin_forts.glb-182a55479121c13ff0993f0c02681142.scn"
 
 [deps]
 
-source_file="res://assets/models/hills.glb"
-dest_files=[ "res://.import/hills.glb-64376a842c07b3888b485dd0e73aa011.scn" ]
+source_file="res://assets/models/twin_forts.glb"
+dest_files=[ "res://.import/twin_forts.glb-182a55479121c13ff0993f0c02681142.scn" ]
 
 [params]
 

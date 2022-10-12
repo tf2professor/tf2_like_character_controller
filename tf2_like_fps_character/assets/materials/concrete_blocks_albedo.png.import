@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/grid_orange_albedo.png-79c42908cf81f2cf4c78c41104507a1b.s3tc.stex"
-path.etc="res://.import/grid_orange_albedo.png-79c42908cf81f2cf4c78c41104507a1b.etc.stex"
+path.s3tc="res://.import/concrete_blocks_albedo.png-4eabe1130cbc4d3ceccb49837d020c44.s3tc.stex"
+path.etc="res://.import/concrete_blocks_albedo.png-4eabe1130cbc4d3ceccb49837d020c44.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/materials/grid_orange_albedo.png"
-dest_files=[ "res://.import/grid_orange_albedo.png-79c42908cf81f2cf4c78c41104507a1b.s3tc.stex", "res://.import/grid_orange_albedo.png-79c42908cf81f2cf4c78c41104507a1b.etc.stex" ]
+source_file="res://assets/materials/concrete_blocks_albedo.png"
+dest_files=[ "res://.import/concrete_blocks_albedo.png-4eabe1130cbc4d3ceccb49837d020c44.s3tc.stex", "res://.import/concrete_blocks_albedo.png-4eabe1130cbc4d3ceccb49837d020c44.etc.stex" ]
 
 [params]
 

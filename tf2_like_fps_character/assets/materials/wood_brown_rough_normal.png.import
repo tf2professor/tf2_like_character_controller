@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/grid_light_albedo.png-1ac21cf5469655898c696a47a65697e5.s3tc.stex"
-path.etc="res://.import/grid_light_albedo.png-1ac21cf5469655898c696a47a65697e5.etc.stex"
+path.s3tc="res://.import/wood_brown_rough_normal.png-da6d9e82134b4bb205dc6deeccef9dde.s3tc.stex"
+path.etc="res://.import/wood_brown_rough_normal.png-da6d9e82134b4bb205dc6deeccef9dde.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/materials/grid_light_albedo.png"
-dest_files=[ "res://.import/grid_light_albedo.png-1ac21cf5469655898c696a47a65697e5.s3tc.stex", "res://.import/grid_light_albedo.png-1ac21cf5469655898c696a47a65697e5.etc.stex" ]
+source_file="res://assets/materials/wood_brown_rough_normal.png"
+dest_files=[ "res://.import/wood_brown_rough_normal.png-da6d9e82134b4bb205dc6deeccef9dde.s3tc.stex", "res://.import/wood_brown_rough_normal.png-da6d9e82134b4bb205dc6deeccef9dde.etc.stex" ]
 
 [params]
 
@@ -20,12 +20,12 @@ compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
-compress/normal_map=0
+compress/normal_map=1
 flags/repeat=true
 flags/filter=true
 flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=1
+flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
